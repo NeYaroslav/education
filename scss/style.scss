@@ -183,10 +183,66 @@ $goldColor: #ffd900;
     }
 }
 
-
+.mainInfo__wrapper {
+    padding-bottom: 5vw;
+    position: relative;
+    overflow: hidden;
+    .circle {
+        position: absolute;
+        border: 5px solid $whiteColor;
+        border-radius: 50%;
+        opacity: 0.5;
+    }
+    .circle:nth-child(2) {
+        top:55px;
+        left: -45px;
+        width: 80px;
+        height: 80px;
+    }
+    .circle:nth-child(3) {
+        top: 200px;
+        left: 50px;
+        width: 100px;
+        height: 100px;
+    }
+    .circle:nth-child(4) {
+        top: 40%;
+        left: 10px;
+        width: 120px;
+        height: 120px;
+        border-width: 10px;
+        opacity: 0.3;
+    }
+    .circle:nth-child(5) {
+        bottom: 50px;
+        left: 20%;
+        width: 50px;
+        height: 50px;
+        border-width: 15px;
+    }
+    .circle:nth-child(6) {
+        top: 0;
+        right: -50px;
+        width: 80px;
+        height: 80px;
+        border-width: 15px;
+    }
+    .circle:nth-child(7) {
+        bottom: -75px;
+        right: -65px;
+        width: 150px;
+        height: 150px;
+        border-width: 8px;
+    }
+    .circle:nth-child(8) {
+        top: -80px;
+        left: 40%;
+        width: 100px;
+        height: 100px;
+    }
+}
 
 .mainInfo {
-    // min-height: 100vh;
     height: 100%;
     width: 100%;
     background-image: linear-gradient( to bottom,#8a61ff, #703fff);
@@ -204,10 +260,9 @@ $goldColor: #ffd900;
 .mainInfo__container {
     display: grid;
     grid-gap: 20px;
+    padding-bottom: 15px;
     overflow: hidden;
 }
-
-._container {}
 
 .mainInfo__container__img {
     max-width: 548px;
@@ -237,30 +292,6 @@ $goldColor: #ffd900;
         object-position: center;
         border-radius: 50%;
     }
-    .circle {
-        position: absolute;
-        border-radius: 50%;
-        border: 10px solid $whiteColor;
-        opacity: .5;
-    }
-    .circle:nth-of-type(2) {
-        width: 100px;
-        height: 100px;
-        top: 60px;
-        left: -30px;
-    }
-    .circle:first-of-type {
-        width: 120px;
-        height: 120px;
-        top: 80px;
-        right: -50px;
-    }
-    .circle:nth-of-type(3) {
-        width: 100px;
-        height: 100px;
-        bottom: 0;
-        left: -30px;
-    }
 }
 
 .mainInfo__container__info {
@@ -279,11 +310,8 @@ $goldColor: #ffd900;
         line-height: 1.2;
 }
 .mainInfo__container__info__btn {
-    position: relative;
     display: flex;
     justify-self: flex-end;
-    z-index: 2;
-    // // text-align: center;
     max-width: 270px;
     padding: 7px 15px;
     border-radius: 30px;
